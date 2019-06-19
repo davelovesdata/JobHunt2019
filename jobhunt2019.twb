@@ -1,0 +1,395 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20182.19.0515.1024                               -->
+<workbook original-version='18.1' source-build='2018.2.10 (20182.19.0515.1024)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='JobHunt2019' inline='true' name='federated.0y2z2tb1j5uq4t1aj36k40zdchw2' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='JobHunt2019' name='excel-direct.1y1ii4y0zrf9qm155dzqc03hjpnp'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/davem/OneDrive/Documents/GitHub/JobHunt2019/JobHunt2019.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.1y1ii4y0zrf9qm155dzqc03hjpnp' name='testdata' table='[testdata$]' type='table'>
+          <columns gridOrigin='A1:L18:no:A1:L18:0' header='yes' outcome='2'>
+            <column datatype='date' name='Date' ordinal='0' />
+            <column datatype='string' name='Source' ordinal='1' />
+            <column datatype='string' name='Company' ordinal='2' />
+            <column datatype='string' name='Industry' ordinal='3' />
+            <column datatype='string' name='JobTitle' ordinal='4' />
+            <column datatype='string' name='JobType' ordinal='5' />
+            <column datatype='string' name='CallFromEmployer' ordinal='6' />
+            <column datatype='date' name='CallDate' ordinal='7' />
+            <column datatype='string' name='Interview' ordinal='8' />
+            <column datatype='date' name='InterviewDate' ordinal='9' />
+            <column datatype='string' name='Status' ordinal='10' />
+            <column datatype='date' name='StartDate' ordinal='11' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>Date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Date]</local-name>
+            <parent-name>[testdata]</parent-name>
+            <remote-alias>Date</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Source</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Source]</local-name>
+            <parent-name>[testdata]</parent-name>
+            <remote-alias>Source</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Company</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Company]</local-name>
+            <parent-name>[testdata]</parent-name>
+            <remote-alias>Company</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Industry</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Industry]</local-name>
+            <parent-name>[testdata]</parent-name>
+            <remote-alias>Industry</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>JobTitle</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[JobTitle]</local-name>
+            <parent-name>[testdata]</parent-name>
+            <remote-alias>JobTitle</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>JobType</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[JobType]</local-name>
+            <parent-name>[testdata]</parent-name>
+            <remote-alias>JobType</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CallFromEmployer</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[CallFromEmployer]</local-name>
+            <parent-name>[testdata]</parent-name>
+            <remote-alias>CallFromEmployer</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CallDate</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[CallDate]</local-name>
+            <parent-name>[testdata]</parent-name>
+            <remote-alias>CallDate</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Interview</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Interview]</local-name>
+            <parent-name>[testdata]</parent-name>
+            <remote-alias>Interview</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>InterviewDate</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[InterviewDate]</local-name>
+            <parent-name>[testdata]</parent-name>
+            <remote-alias>InterviewDate</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Status</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Status]</local-name>
+            <parent-name>[testdata]</parent-name>
+            <remote-alias>Status</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>StartDate</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[StartDate]</local-name>
+            <parent-name>[testdata]</parent-name>
+            <remote-alias>StartDate</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[testdata]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>4</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:L18:no:A1:L18:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Call Date' datatype='date' name='[CallDate]' role='dimension' type='ordinal' />
+      <column caption='Call From Employer' datatype='string' name='[CallFromEmployer]' role='dimension' type='nominal' />
+      <column caption='Interview Date' datatype='date' name='[InterviewDate]' role='dimension' type='ordinal' />
+      <column caption='Job Title' datatype='string' name='[JobTitle]' role='dimension' type='nominal' />
+      <column caption='Job Type' datatype='string' name='[JobType]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Start Date' datatype='date' name='[StartDate]' role='dimension' type='ordinal' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.5' measure-ordering='alphabetic' measure-percentage='0.5' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 2'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='JobHunt2019' name='federated.0y2z2tb1j5uq4t1aj36k40zdchw2' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0y2z2tb1j5uq4t1aj36k40zdchw2'>
+            <column datatype='string' name='[Industry]' role='dimension' type='nominal' />
+            <column caption='Job Type' datatype='string' name='[JobType]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+              <calculation class='tableau' formula='1' />
+            </column>
+            <column datatype='string' name='[Source]' role='dimension' type='nominal' />
+            <column-instance column='[Industry]' derivation='None' name='[none:Industry:nk]' pivot='key' type='nominal' />
+            <column-instance column='[JobType]' derivation='None' name='[none:JobType:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Source]' derivation='None' name='[none:Source:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Number of Records]' derivation='Sum' name='[sum:Number of Records:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.0y2z2tb1j5uq4t1aj36k40zdchw2].[sum:Number of Records:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0y2z2tb1j5uq4t1aj36k40zdchw2].[sum:Number of Records:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0y2z2tb1j5uq4t1aj36k40zdchw2].[none:Industry:nk]</rows>
+        <cols>([federated.0y2z2tb1j5uq4t1aj36k40zdchw2].[none:JobType:nk] / [federated.0y2z2tb1j5uq4t1aj36k40zdchw2].[none:Source:nk])</cols>
+      </table>
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0y2z2tb1j5uq4t1aj36k40zdchw2].[none:Industry:nk]</field>
+            <field>[federated.0y2z2tb1j5uq4t1aj36k40zdchw2].[none:JobTitle:nk]</field>
+            <field>[federated.0y2z2tb1j5uq4t1aj36k40zdchw2].[none:JobType:nk]</field>
+            <field>[federated.0y2z2tb1j5uq4t1aj36k40zdchw2].[none:Source:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='164' name='Sheet 2' width='192'>
+      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
+      QmCC
+    </thumbnail>
+  </thumbnails>
+</workbook>
