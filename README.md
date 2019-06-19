@@ -14,7 +14,8 @@ The dataset has the following features:<br>
 ***Industry*** - (factor). The industry general type. **(TBR)**<br>
 ***JobTitle*** - (character). The Job Title.<br>
 ***JobType*** - (factor). The general job area (data engineering, data science, project management, systems engineering, test engineering). This area may grow as my job search grows.<br>
-***CallFromEmployer*** - (binary). Either 'call', signifying the employer reached out following application. 'NA' signifies that no call was ever received. I might just change this to 'nocall' later. <br>
+***JobLocation*** - (character). City, State of Job.
+***CallFromEmployer*** - (factor). Either 'call', signifying the employer reached out following application. 'NA' signifies that no call was ever received. I might just change this to 'nocall' later. <br>
 ***CallDate*** - (date). <br>
 ***Interview*** - (factor).'interview', signifies an interview was scheduled. 'NA' signifies that no interview was scheduled. I might just change this to 'nointerview' later. 'interviewpassed' means I passed on the job offer and no interview was scheduled.<br>
 ***InterviewDate*** - (date). <br>
